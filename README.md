@@ -1,7 +1,20 @@
-# cmd-alias
-记录自己在开发中使用的别名，让自己变懒
+# 命令行别名
+记录自己在开发中使用的别名，让自己变懒，更换全局的需要在 `/etc` 文件下面，如果是当前用户的需要在 `～` 下
+## 使用 `bash` 的用户，需要修改 `~/.bash_aliases`
+```shell
+sudo vim ~/.bash_aliases
+```
+## 使用 `zsh` 的用户，需要在 `~/.zshrc` 文件中新增 `~/.zsh_aliases` 文件
+```shell
+if [ -f ~/.zsh_aliases ]; then
+     . ~/.zsh_aliases
+fi
+```
+```shell
+sudo vim ~/.zsh_aliases
+```
 
-## 使用在 `laravel` 中的别名
+## Laravel
 ```shell
 alias pa='php artisan'
 alias par:l='php artisan route:list'
@@ -13,7 +26,7 @@ alias ci='composer install'
 alias cda='composer dump-autoload -o'
 ```
 
-## 使用在 `vagrant` 中的别名
+## Vagrant
 ```shell
 alias vu='cd ~/Homestead && sudo vagrant up'
 alias vs='sudo vagrant suspend'
@@ -24,7 +37,7 @@ alias eh='sudo vim /etc/hosts'
 alias ehh='sudo vim ~/.homestead/Homestead.yaml'
 ```
 
-## 使用在 `git` 中的别名
+## Git
 ```shell
 alias gl='git log'
 alias gc='git config'
@@ -32,4 +45,9 @@ alias gs='git status'
 alias gpl='git pull'
 alias gps='git push'
 alias gct='git checkout'
+```
+
+## Ruby
+```shell
+alias bs='./bin/rails'
 ```
