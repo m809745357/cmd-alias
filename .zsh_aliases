@@ -1,0 +1,32 @@
+alias pa='php artisan'
+alias par:l='php artisan route:list'
+alias pam='php artisan migrate'
+alias pam:r='php artisan migrate:refresh'
+alias pam:rs='php artisan migrate:refresh --seed'
+
+alias cu='composer update'
+alias ci='composer install'
+alias cda='composer dump-autoload -o'
+
+alias gl='git log'
+alias gc='git config'
+alias gs='git status'
+alias gpl='git pull'
+alias gps='git push'
+alias gct='git checkout'
+
+alias pt="./vendor/bin/phpunit"
+alias pr="./vendor/bin/phpunit --filter"
+
+alias vu='cd ~/Homestead && sudo vagrant up'
+alias ch='cd ~/Homestead'
+alias vs='sudo vagrant suspend'
+alias vssh='sudo vagrant ssh'
+alias vsp='sudo vagrant provision'
+alias vsup='sudo vagrant up -provision'
+alias eh='sudo vim /etc/hosts'
+alias ehh='sudo vim ~/Homestead/Homestead.yaml'
+
+alias sc:r="sudo chown shenyifei:shenyifei -R"
+
+alias bs="./bin/rails"
